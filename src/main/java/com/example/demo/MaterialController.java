@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.dominio.Material;
-import com.example.demo.service.CategoriaController;
+import com.example.demo.service.CategoriaService;
 import com.example.demo.service.MaterialService;
 
 @Component
@@ -21,7 +21,7 @@ public class MaterialController {
 	private MaterialService materialService;
 	
 	@Autowired
-	private CategoriaController categoriaService;
+	private CategoriaService categoriaService;
 
 	@RequestMapping("/material/listar")
 	public ModelAndView listar() {

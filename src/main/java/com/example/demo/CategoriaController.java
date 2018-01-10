@@ -13,7 +13,6 @@ import com.example.demo.service.CategoriaService;
 import com.example.demo.service.GrupoCategoriaService;
 
 @Controller
-@RequestMapping("/categoria")
 public class CategoriaController {
 
 	
